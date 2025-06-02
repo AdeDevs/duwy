@@ -595,7 +595,7 @@ footer ul li:hover {
     color: #fff;
 }
 
-@media screen and (max-width:850px) {
+/* @media screen and (max-width:850px) {
     .hero .intro {
         display: flex;
         flex-direction: column;
@@ -626,7 +626,7 @@ footer ul li:hover {
     .review p {
         width: 90%;
     }
-}
+} */
 @media screen and (max-width:550px) {
     .home-page .hero {
         padding: 20px;
