@@ -22,7 +22,7 @@
 .nav-bar {
     background-color: #fff;
     width: 100%;
-    padding: 20px 30px;
+    padding: 15px 30px;
     color: #1c1c1d;
     display: flex;
     align-items: center;
@@ -152,10 +152,6 @@
 @media screen and (max-width: 850px) {
     .toggle {
         display: flex;
-    }
-
-    .nav-bar {
-        padding: 20px 30px;
     }
 
     .nav-bar .desk-nav,

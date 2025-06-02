@@ -246,10 +246,49 @@ export default function HomePage() {
                 <section className="ft-head">
                     <h1>Let's Connect <br /> There</h1>
                     <button>
-                        <sub><span><ion-icon name="chevron-forward"></ion-icon></span><span><ion-icon name="chevron-forward"></ion-icon></span></sub>&nbsp; Hire Me Now! &nbsp;&nbsp;
+                        <sub className="arrow"><span><ion-icon name="chevron-forward"></ion-icon></span><span><ion-icon name="chevron-forward"></ion-icon></span></sub>&nbsp; Hire Me Now! &nbsp;&nbsp;
                     </button>
                 </section>
-                <section className="ft-links"></section>
+                <section className="ft-links">
+                    <div className="main-links">
+                        <div className="brand">
+                            <h1>Duwy</h1>
+                            <p>Duwy Product Image and Video Generator is a cutting-edge commerce product that uses artificial intelligence (AI)</p>
+                        </div>
+                        <div className="links">
+                            <ul>
+                                <li className="link-bold">Address</li>
+                                <li>Technology Park 7-12 Gumpang</li>
+                                <li>Surulere Soka Ibadan, Nigeria</li>
+                            </ul>
+                            <ul>
+                                <li className="link-bold">Email Address</li>
+                                <li>john@doe.com</li>
+                                <li>dummy@mail.com</li>
+                            </ul>
+                            <ul>
+                                <li className="link-bold">Phone Number</li>
+                                <li>(0232) 131 4564 232</li>
+                                <li>(234) 907 6320 109</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="sub-links">
+                        <ul className="socials">
+                            <li><ion-icon name="logo-instagram"></ion-icon></li>
+                            <li><ion-icon name="logo-twitter"></ion-icon></li>
+                            <li><ion-icon name="logo-youtube"></ion-icon></li>
+                            <li><ion-icon name="logo-pinterest"></ion-icon></li>
+                        </ul>
+                        <ul>
+                            <li>Teamplates</li>
+                            <li>Tools</li>
+                            <li>Features</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                </section>
+                <p className="copy">this webpage was built by <a href="http://iamadedevs.vercel.app" target="_blank">AdeDevs</a></p>
             </footer>
         </div>
     )
