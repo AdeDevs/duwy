@@ -675,7 +675,7 @@ footer ul li:hover {
         flex-direction: column;
     }
     .home-main .h-txt1 {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     .about-head h1 br {
         display: none;
@@ -725,9 +725,16 @@ footer ul li:hover {
     }
     .exp-item h3 {
         width: 100%;
+        font-size: 20px;
+    }
+    .exp-item p {
+        font-size: 12px;
     }
     .home-main .portfolio {
         padding: 0 20px;
+    }
+    .portfolio .port-head {
+        flex-direction: column;
     }
     .portfolio .projects {
         display: flex;
