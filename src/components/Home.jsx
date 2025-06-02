@@ -104,7 +104,7 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="experience-box">
-                    <h1 className="tag-btn">Experience</h1>
+                    <h6 className="tag-btn">Experience</h6>
                     <div className="exp-head">
                         <h1 className="h-txt1">A yearly snapshot of my <br /> creative growth.</h1>
                         <p>An annual summary that summarizes my <br /> creative journey and development throughout the year.</p>
@@ -141,7 +141,7 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="portfolio">
-                    <h1 className="tag-btn">portfolio</h1>
+                    <h6 className="tag-btn">portfolio</h6>
                     <div className="exp-head port-head">
                         <h1 className="h-txt1">Explore my portfolio of <br /> creative solutions.</h1>
                         <p>Explore my portfolio full of creative solutions.</p>
