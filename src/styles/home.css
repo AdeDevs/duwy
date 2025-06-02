@@ -14,18 +14,6 @@ button {
     cursor: pointer;
 }
 
-.tag-btn {
-    border: 1px solid transparent;
-    border: 1px solid #000;
-    padding: 5px 20px;
-    cursor: pointer;
-    font-size: 12px;
-    font-family: inherit;
-    width: fit-content;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
 
 .home-page .hero {
     padding: 20px 30px;
@@ -783,4 +771,18 @@ footer ul li:hover {
     .sub-links ul {
         flex-wrap: wrap;
     }
+}
+.tag-btn {
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #000, #dedede) border-box;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: inherit;
+    width: fit-content;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
