@@ -1,0 +1,81 @@
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 40px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee .marq-left {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  background: linear-gradient(to right, #fff, #ffffff2d);
+  left: 0;
+  z-index: 900;
+}
+
+.marquee .marq-right {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff2d, #fff);
+  z-index: 900;
+  float: right;
+  right: 0;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding: 4px 0;
+  white-space: nowrap;
+  z-index: 800;
+  animation: scroll-seamless 20s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-content button {
+  font-size: 14px;
+  border: 1px solid #dedede;
+  padding: 15px 30px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 40px;
+  display: inline-flex;
+  font-weight: bold;
+  margin-right: 25px;
+  /* spacing between repeats */
+}
+
+@keyframes scroll-seamless {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media screen and (max-width:850px) {
+  .marquee button {
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+  .marquee .marq-right, .marquee .marq-left {
+    width: 15%;
+  }
+}

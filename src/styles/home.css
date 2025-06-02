@@ -1,0 +1,609 @@
+.home-page {
+    font-family: var(--mainFont);
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    background-color: #fff;
+}
+
+button {
+    text-transform: capitalize;
+    font-family: inherit;
+    transition: .3s ease-in-out;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tag-btn {
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #000, #dedede) border-box;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: inherit;
+    width: fit-content;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.home-page .hero {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hero .intro {
+    position: relative;
+    width: 100%;
+    padding-top: 250px;
+    margin-bottom: 20px;
+}
+
+.intro .intro-bg {
+    background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.intro .intro-txt {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.intro-txt h1 {
+    font-weight: 400;
+    font-size: 10vw;
+    line-height: 100%;
+}
+
+.intro p {
+    font-size: 14px;
+    text-align: right;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.home-main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-main .h-txt1 {
+    font-size: 2.4em;
+    text-transform: capitalize;
+    line-height: 100%;
+}
+
+.home-main .about {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.about .about-head {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.about-head p {
+    text-align: right;
+    color: #8c8c8c;
+}
+
+.about .about-facts {
+    width: 100%;
+    gap: 45px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.about-facts .facts-bg {
+    background-image: url(../assets/about.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.about-facts .facts-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.facts-txt ul {
+    list-style-type: none;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.facts-txt .f-big {
+    font-size: 3em;
+    color: #000;
+    font-weight: 500;
+}
+
+.home-main .services {
+    padding: 0 30px;
+    width: 100%;
+    margin: 70px auto;
+    box-sizing: border-box;
+    gap: 120px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.services .service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-info .tag-btn {
+    margin: 0;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.service-info button {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 20px;
+    width: fit-content;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.service-info button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.services .service-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.service-item .service {
+    border: 1px solid #dedede;
+    background-color: #fafafa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.service:hover {
+    padding: 20px 20px 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.service:hover .s-txt3 {
+    color: #fff;
+}
+
+.service:hover .s-btn {
+    transform: rotate(325deg);
+}
+
+.service .line {
+    height: 1px;
+    width: 70px;
+    margin-bottom: -10px;
+    background-color: #8c8c8c;
+}
+
+.service .s-txt2 {
+    font-size: 23px;
+    line-height: 100%;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+
+.service .s-txt3 {
+    color: #8c8c8c;
+    width: 85%;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+
+.service .s-btn {
+    width: fit-content;
+    align-self: flex-end;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    display: flex;
+    padding: 14px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    font-size: 23px;
+    box-sizing: border-box;
+}
+
+.home-main .experience-box {
+    background-color: #fafafa;
+    padding: 40px 0;
+}
+
+.experience-box .tag-btn {
+    margin-left: 30px;
+}
+
+.experience-box .exp-head {
+    padding: 0 30px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+
+.exp-head p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.experience-box .experience {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.experience .exp-item {
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.exp-item:hover {
+    background-color: #e3e3e3;
+}
+
+.exp-item h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.exp-item p {
+    font-size: 13px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #8c8c8c;
+}
+
+.exp-item h3 {
+    justify-content: end;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.home-main .portfolio {
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.portfolio .port-head {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+
+.portfolio .projects {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.projects .project {
+    background-color: #8c8c8c;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/proj-1.png);
+    box-sizing: border-box;
+    height: 300px;
+}
+.project:hover .proj-txt {
+    opacity: 1;
+    visibility: visible;
+}
+.projects .project-2 {
+    background-image: url(../assets/proj-2.png);
+}
+.projects .project-3 {
+    background-image: url(../assets/proj-3.png);
+}
+.projects .project-4 {
+    background-image: url(../assets/proj-4.png);
+}
+.projects .project-5 {
+    background-image: url(../assets/proj-6.png);
+}
+.projects .project-6 {
+    background-image: url(../assets/proj-1.png);
+}
+.project .proj-txt {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background-image: linear-gradient(#ffffff26, #000000);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+.proj-txt ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.proj-txt .proj-tags li{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.proj-txt .proj-title {
+    justify-content: space-between;
+    align-items: center;
+}
+.proj-title .t-txt1 {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.proj-title .icon {
+    font-size: 30px;
+    transform: rotate(320deg);
+    display: flex;
+}
+
+.home-main .testimonial {
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    text-align: center;
+}
+.testimonial .review {
+    position: relative;
+    padding: 70px 0 40px 0;
+}
+.review p {
+    font-size: 25px;
+    font-style: italic;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.testimonial .user-profile {
+    border-top: 1px solid #8c8c8c;
+    margin: 10px auto;
+    padding: 30px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.user-profile .avatar {
+    background-image: url(../assets/bat.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 100%;
+}
+.user-profile ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5px;
+    align-items: start;
+}
+.user-profile ul li {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+}
+.user-profile ul .avt-info {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+@media screen and (max-width:850px) {
+    .hero .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .intro .intro-bg {
+        position: static;
+        align-self: flex-end;
+    }
+
+    .home-main .services {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exp-item h3 {
+        font-size: 27px;
+    }
+    .portfolio .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+    .proj-title .t-txt1 {
+        font-size: 2vw;
+    }
+    .review p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .home-page .hero {
+        padding: 20px;
+    }
+    .home-main .about,
+    .home-main .services,
+    .experience-box .exp-head,
+    .experience .exp-item, .home-main .testimonial {
+        padding: 0 20px;
+    }
+    .hero .intro {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .intro .intro-bg {
+        position: static;
+        background-position: top;
+        width: 100%;
+        align-self: flex-end;
+    }
+    .intro .intro-txt {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .intro-txt h1 {
+        font-size: 12vw;
+    }
+    .about .about-head {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-main .h-txt1 {
+        font-size: 2em;
+    }
+    .about-head h1 br {
+        display: none;
+    }
+    .about .about-facts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-facts .facts-bg {
+        height: 250px;
+        width: 100%;
+    }
+    .about-facts .facts-txt {
+        gap: 20px;
+    }
+    .services .service-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-item .service {
+        width: 100%;
+    }
+    .experience-box .exp-head {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+    .exp-head h1 br {
+        display: none;
+    }
+    .exp-head p {
+        text-align: right;
+    }
+    .experience .exp-item {
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+        border-bottom: 1px solid #8c8c8c;
+    }
+    .exp-item:nth-child(1) {
+        border-top: 1px solid #8c8c8c;
+    }
+    .exp-item h2 {
+        font-size: 20px;
+    }
+    .exp-item h3 {
+        width: 100%;
+    }
+    .home-main .portfolio {
+        padding: 0 20px;
+    }
+    .portfolio .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .project {
+        height: 250px;
+    }
+    .proj-title .t-txt1 {
+        font-size: 3vw;
+    }
+    .testimonial .review {
+        padding: 40px 0;
+    }
+    .review p {
+        width: 100%;
+        font-size: 18px;
+    }
+    .testimonial .user-profile {
+        width: 90%;
+        padding: 30px 0 15px 0;
+    }
+}
