@@ -243,8 +243,13 @@ export default function HomePage() {
                 </section>
             </main>
             <footer>
-                <section className="footer-"></section>
-                <section className="footer-"></section>
+                <section className="ft-head">
+                    <h1>Let's Connect <br /> There</h1>
+                    <button>
+                        <sub><span><ion-icon name="chevron-forward"></ion-icon></span><span><ion-icon name="chevron-forward"></ion-icon></span></sub>&nbsp; Hire Me Now! &nbsp;&nbsp;
+                    </button>
+                </section>
+                <section className="ft-links"></section>
             </footer>
         </div>
     )
